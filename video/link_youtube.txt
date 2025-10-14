@@ -1,24 +1,4 @@
 LINK DO VÍDEO DEMONSTRATIVO
 ==========================
 
-Após fazer upload do vídeo no YouTube (não listado), cole o link abaixo:
-
-URL: [INSERIR LINK AQUI]
-
-Exemplo: https://youtu.be/XXXXXXXXXXX
-
----
-
-INSTRUÇÕES:
-
-1. Grave o vídeo seguindo o roteiro em ROTEIRO_VIDEO.md
-2. Faça upload no YouTube
-3. Configure como "Não listado"
-4. Copie o link
-5. Cole aqui
-6. Salve este arquivo
-
----
-
-Data do Upload: __/__/____
-Duração do Vídeo: ____:____
+URL: https://youtu.be/eef2sZ8tv2k
