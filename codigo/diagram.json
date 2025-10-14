@@ -1,0 +1,210 @@
+{
+  "version": 1,
+  "author": "Jeffe Souza",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-esp32-devkit-c-v4",
+      "id": "esp",
+      "top": 0,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 32.3,
+      "left": -146.5,
+      "rotate": 90,
+      "attrs": {
+        "color": "green",
+        "xray": "1",
+        "label": "P",
+        "bounce": "1",
+        "key": "1"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": 99.5,
+      "left": -146.5,
+      "rotate": 90,
+      "attrs": {
+        "color": "green",
+        "label": "N",
+        "xray": "1",
+        "key": "2"
+      }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn3",
+      "top": 176.3,
+      "left": -146.5,
+      "rotate": 90,
+      "attrs": {
+        "color": "green",
+        "label": "K",
+        "xray": "1",
+        "key": "3"
+      }
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -134.1,
+      "left": 157.8,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": -102.4,
+      "left": -229.6,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-relay-module",
+      "id": "relay1",
+      "top": 57.8,
+      "left": 220.8,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [
+      "esp:TX",
+      "$serialMonitor:RX",
+      "",
+      []
+    ],
+    [
+      "esp:RX",
+      "$serialMonitor:TX",
+      "",
+      []
+    ],
+    [
+      "btn1:1.r",
+      "esp:14",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "btn1:2.r",
+      "esp:GND.2",
+      "black",
+      [
+        "h0"
+      ]
+    ],
+    [
+      "btn2:1.r",
+      "esp:12",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "btn2:2.r",
+      "esp:GND.2",
+      "black",
+      [
+        "h0"
+      ]
+    ],
+    [
+      "btn3:1.r",
+      "esp:27",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "btn3:2.r",
+      "esp:GND.2",
+      "black",
+      [
+        "h0"
+      ]
+    ],
+    [
+      "dht1:GND",
+      "esp:GND.2",
+      "black",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "dht1:VCC",
+      "esp:3V3",
+      "red",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "dht1:SDA",
+      "esp:15",
+      "green",
+      [
+        "v0"
+      ]
+    ],
+    [
+      "ldr1:VCC",
+      "esp:3V3",
+      "red",
+      [
+        "h0"
+      ]
+    ],
+    [
+      "ldr1:GND",
+      "esp:GND.2",
+      "black",
+      [
+        "h0"
+      ]
+    ],
+    [
+      "ldr1:AO",
+      "esp:34",
+      "green",
+      [
+        "h0"
+      ]
+    ],
+    [
+      "relay1:VCC",
+      "esp:3V3",
+      "red",
+      [
+        "h0"
+      ]
+    ],
+    [
+      "relay1:GND",
+      "esp:GND.2",
+      "black",
+      [
+        "h0"
+      ]
+    ],
+    [
+      "relay1:IN",
+      "esp:26",
+      "green",
+      [
+        "h0"
+      ]
+    ]
+  ],
+  "dependencies": {}
+}

@@ -1,0 +1,15 @@
+{
+  "cidade": "Sao Paulo",
+  "timestamp": "2025-10-11 23:10:21",
+  "fonte": "wttr.in API",
+  "temperatura_atual": 18,
+  "umidade_relativa": 94,
+  "condicao": "Mist",
+  "precipitacao_mm": 0.1,
+  "probabilidade_chuva": 0,
+  "temp_maxima": 25,
+  "temp_minima": 17,
+  "vento_kmh": 8,
+  "recomendacao_irrigacao": "NORMAL",
+  "motivo": "Baixa probabilidade de chuva (0%)"
+}
